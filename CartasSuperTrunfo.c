@@ -79,5 +79,37 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", Num_Pontos_TuristicosC2);
     printf("==============================\n");
 
+     // Calculo dos atributos 
+
+    float densidade_demograficaC1 = PopulacaoC1 / AreaC1;
+    float densidade_demograficaC2 = PopulacaoC2 / AreaC2;
+    float calcular_pib_per_capitaC1 = (PibC1 * 1000000000) / PopulacaoC1;
+    float calcular_pib_per_capitaC2 = (PibC2 * 1000000000) / PopulacaoC2;
+
+    // Apresentação dos Atributos Calculados do Primeiro Jogador
+    printf("==============================\n");
+    printf("Estado: %s\n", EstadoC1);
+    printf("Codigo da Carta: %s\n", Codigo_CartaC1);
+    printf("Nome da Cidade: %s\n", Nome_CidadeC1);
+    printf("População: %d\n", PopulacaoC1);
+    printf("Área: %.2f\n", AreaC1);
+    printf("PIB: %.2f bilhões de reais\n", PibC1);
+    printf("Numero de Pontos Turisticos: %d\n", Num_Pontos_TuristicosC1);
+    printf("Densidade Demográfica: %.2f hab/km²\n", densidade_demograficaC1);
+    printf("PIB per Capita: %.2f reais\n", calcular_pib_per_capitaC1);
+
+    // Segundo Jogador
+    printf("Carta do Segundo Jogador \n");
+    printf("==============================\n");
+    printf("Estado: %s\n", EstadoC2);
+    printf("Codigo da Carta: %s\n", Codigo_CartaC2);
+    printf("Nome da Cidade: %s\n", Nome_CidadeC2);
+    printf("População: %d\n", PopulacaoC2);
+    printf("Área: %.2f km²\n", AreaC2);
+    printf("PIB: %.2f bilhões de reais\n", PibC2);
+    printf("Numero de Pontos Turisticos: %d\n", Num_Pontos_TuristicosC2);
+    printf("Densidade Demográfica: %.2f hab/km²\n", densidade_demograficaC2);
+    printf("PIB per Capita: %.2f reais\n", calcular_pib_per_capitaC2);
+    
 return 0;
 } 
